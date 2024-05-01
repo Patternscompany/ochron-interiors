@@ -362,7 +362,7 @@ h6,
 }
 
 .project .nav .nav-link.active {
-    background: var(--primary);
+    background:#2078a4 ;
 }
 
 .project .nav .nav-link.active h3 {
