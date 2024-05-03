@@ -326,7 +326,7 @@ h6,
 }
 
 .service-item .service-text {
-    background: var(--light);
+    background: lightgreen;
     transition: .5s;
 }
 
