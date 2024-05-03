@@ -10019,10 +10019,35 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
-.position-relative {
-  position: relative !important;
+.menu-item2 {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  /* padding: 20px; */
+  /* width: 30%; */
+  /* overflow: hidden; */
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin:10px;
 }
 
-.overflow-hidden {
-  overflow: hidden !important;
+.menu-item2:hover {
+  /* margin-top:20px; */
+  padding: 10px;
+  box-shadow: 4px 4px 8px #2078a4, -4px -4px 8px #2078a4;
 }
+.size_img2{
+  
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  height:250px;
+  border-radius: 8px 8px 0px 0px;
+ }
+ .ftco-animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
