@@ -632,6 +632,7 @@ h6,
 /*** Footer ***/
 .footer{
     background-color: #000;
+  clip-path:polygon();
 }
 .footer .btn.btn-link {
     display: block;
