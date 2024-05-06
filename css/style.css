@@ -4,7 +4,12 @@
     --light: #F8F8F8;
     --dark: #252525;
 }
-
+.our h3{
+color: #000;
+}
+.our p{
+    color: var(--light);
+}
 h1,
 h2,
 .h1,
@@ -396,7 +401,7 @@ h6,
 }
 
 .service-item .service-text {
-    background: lightgreen;
+    background: var(--primary);
     transition: .5s;
 }
 
@@ -408,6 +413,9 @@ h6,
     transition: .5;
 }
 
+.service-item * {
+    color: #FFFFFF;
+}
 .service-item:hover * {
     color: #FFFFFF;
 }
@@ -622,6 +630,9 @@ h6,
 
 
 /*** Footer ***/
+.footer{
+    background-color: #000;
+}
 .footer .btn.btn-link {
     display: block;
     margin-bottom: 5px;
