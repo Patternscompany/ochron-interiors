@@ -79,6 +79,14 @@
         dotsData: true,
     });
 
-    
+    const questions = document.querySelectorAll('.question');
+
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            question.nextElementSibling.classList.toggle('active');
+            question.classList.toggle('plus');
+            question.classList.toggle('minus');
+        });
+    });
 })(jQuery);
 
