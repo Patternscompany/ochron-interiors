@@ -78,15 +78,48 @@
         items: 1,
         dotsData: true,
     });
+    $('.part-carousel').owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        loop: true,
+        nav: false,
+        dots: true,
+        responsive: {
+            0:{
+                items:2
+            },
+            768:{
+                items:2
+            },
+            992:{
+                items:5
+            },
+           
+        },
+        dotsData:false,
+    });
 
     const questions = document.querySelectorAll('.question');
 
     questions.forEach(question => {
         question.addEventListener('click', () => {
-            question.nextElementSibling.classList.toggle('active');
-            question.classList.toggle('plus');
-            question.classList.toggle('minus');
+            const isActive = question.nextElementSibling.classList.contains('active');
+    
+            // Collapse all questions
+            questions.forEach(q => {
+                if (q !== question) {
+                    q.nextElementSibling.classList.remove('active');
+                    q.classList.remove('minus');
+                    q.classList.add('plus');
+                }
+            });
+    
+            // Toggle the clicked question
+            question.nextElementSibling.classList.toggle('active', !isActive);
+            question.classList.toggle('plus', isActive);
+            question.classList.toggle('minus', !isActive);
         });
     });
+    
 })(jQuery);
 

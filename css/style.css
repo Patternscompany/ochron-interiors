@@ -132,13 +132,13 @@ h6,
     
 }
 .answer {
-    display: none;
-    padding: 10px;
+   display: none;
+    padding:  12px;
     border: 1px solid #a49999;
     border-radius: 5px;
     margin-top: 5px;
     color: black;
- 
+
 }
 .plus::after {
     content: "+";
@@ -146,6 +146,7 @@ h6,
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+    transition: 0.5s ease-in-out;
 }
 .minus::after {
     content: "-";
@@ -153,10 +154,14 @@ h6,
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+    transition: 0.5s ease-in-out;
 }
 .answer.active {
-    display: block;
+   
+  display: block;
+  transition: display 0.5s ease-in-out;
 }
+
 .whatsapp {
     position: fixed;
     bottom: 10px;
@@ -178,6 +183,46 @@ h6,
     color: #000;
     background-color:
         #2078a4;
+}
+.design .heading-design {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.design .heading-design::before {
+    content: "";
+    text-align: left;
+    width: 70%;
+    height: 2px;
+    background-color: #2078a4;
+
+}
+
+.design .heading-design span {
+    font-size: 26px;
+
+}
+.design .col-lg-2{
+    display: grid;
+    place-items: center;
+transition: transform 1s all ease-in-out;
+}
+.design .col-lg-2:hover img{
+  transform: scale(1.15);
+
+}
+.design img{
+    max-width: 100%;
+    padding: 2rem;
+    margin-top: 1rem;
+    box-shadow:inset 10px 10px 20px #095F8F;
+}
+.design p{
+    text-transform: uppercase;
+    padding-block: 10px;
 }
 .gallery .size_img2{
     object-fit: cover;
@@ -628,7 +673,9 @@ h6,
     opacity: 1;
 }
 
-
+.part-carousel img{
+    object-fit: scale-down;
+}
 /*** Footer ***/
 .footer{
     background-color: #000;
