@@ -348,7 +348,7 @@ transition: transform 1s all ease-in-out;
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/abot-hero.webp) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/carousal-4.jpg) center center no-repeat;
     background-size: cover;
 }
 .page-header1 {
@@ -357,6 +357,14 @@ transition: transform 1s all ease-in-out;
 }
 .page-header2 {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/bed.hero.jpg) center center no-repeat;
+    background-size: cover;
+}
+.page-header3 {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/kitchen-hero.jpg) center center no-repeat;
+    background-size: cover;
+}
+.page-header4 {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/warddrop.hero.avif) center center no-repeat;
     background-size: cover;
 }
 
