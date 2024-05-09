@@ -10037,7 +10037,7 @@ fieldset:disabled .btn {
   background-size: cover;
   position: relative;
   height:250px;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 8px ;
  }
  .ftco-animated {
   -webkit-animation-duration: .5s;
