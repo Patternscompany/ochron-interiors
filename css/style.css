@@ -348,15 +348,16 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/carousal-4.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/1.png) center center no-repeat;
     background-size: cover;
+    
 }
 .page-header1 {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/gallery-hero.png) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/2.png) center center no-repeat;
     background-size: cover;
 }
 .page-header2 {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/bed.hero.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/1.png) center center no-repeat;
     background-size: cover;
 }
 .page-header3 {
@@ -367,7 +368,30 @@ h6,
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/warddrop.hero.avif) center center no-repeat;
     background-size: cover;
 }
-
+.page-header6 {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/8.png) center center no-repeat;
+    background-size: cover;
+}
+.page-header7 {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/8.png) center center no-repeat;
+    background-size: cover;
+}
+.page-header9 {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/k.png) center center no-repeat;
+    background-size: cover;
+}
+.page-header11 {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/ss.png) center center no-repeat;
+    background-size: cover;
+}
+.page-header12 {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/cc.png) center center no-repeat;
+    background-size: cover;
+}
+.page-header13 {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/cc.png) center center no-repeat;
+    background-size: cover;
+}
 .breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
 }
