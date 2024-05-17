@@ -21,6 +21,7 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -197,10 +198,106 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="about-img">
+                    <!-- <div class="about-img">
                         <img class="img-fluid" src="img/AnyConv.com__IMG_6747.jpg" alt="">
                         <img class="img-fluid" src="img/AnyConv.com__IMG_6723.jpg" alt="">
-                    </div>
+                    </div> -->
+                    <div style="margin-top: 20px;">
+
+                        <figure class="wave">
+                          <img src="img/new/A1.jpg" alt="rajni"></img>
+                          <!-- <figcaption>Rajinikanth</figcaption> -->
+                        </figure>
+                      
+                        <figure class="wave">
+                          <img src="img/AnyConv.com__IMG_6730.jpg" alt="chuck"></img>
+                          
+                         
+                        </figure>
+                      
+                        <figure class="wave">
+                          <img src="img/AnyConv.com__IMG_6723.jpg" alt="chan"></img>
+                          
+                        </figure>
+                      
+                        <figure class="wave">
+                          <img src="img/AnyConv.com__IMG_6705.jpg" alt="bean"></img>
+                         
+                        </figure>
+                      
+                      </div>
+                    
+                    
+                    
+                      <style>
+                        /* body {
+                      background: #000000;
+                      color: #FFFFFF;
+                      display: flex;
+                      justify-content: center;
+                      flex-direction: column;
+                      align-items: center;
+                      padding:10px;
+                      font-family: 'Roboto Mono', monospace;
+                    } */
+                    
+                    .wave {
+                      float: left;
+                      margin: 20px;
+                      animation: wave  ease-in-out 0.5s infinite alternate;
+                      transform-origin: center -36px;
+                    }
+                    
+                    .wave:hover {
+                      animation-play-state: paused;
+                      cursor: pointer;
+                    }
+                    
+                    .wave img {
+                      border: 5px solid #f8f8f8;
+                      display: block;
+                      width: 200px;
+                      height: 250px;
+                    }
+                    
+                    .wave figcaption {
+                      text-align: center;
+                    }
+                    
+                    .wave:after{
+                      content: '';
+                      position: absolute;
+                      width: 20px; 
+                      height: 20px;
+                      border: 1.5px solid #ffffff;
+                      top: -10px; 
+                      left: 50%;
+                      border-bottom: none;
+                      border-right: none;
+                      transform: rotate(35deg);
+                    }
+                           
+                    .wave:before{
+                      content: '';
+                      position: absolute;
+                      top: -23px;
+                      left: 50%;
+                      display: block;
+                      height: 44px;
+                      width: 47px;
+                      background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+                      background-size: 20px 20px;
+                      background-repeat: no-repeat;
+                      z-index: 16;
+                    }
+                            
+                    @keyframes wave {
+                      0% { transform: rotate(10deg); }
+                      100% { transform: rotate(-10deg); }
+                    }
+                      </style>
+                    
+                    
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <h4 class="section-title">About Us</h4>
@@ -426,6 +523,9 @@
                         <img class="img-fluid" src="img/AnyConv.com__IMG_2928.jpg" alt="">
                         <img class="img-fluid" src="img/AnyConv.com__IMG_2920.jpg" alt="">
                     </div>
+                    
+
+                      
                 </div>
             </div>
         </div>
