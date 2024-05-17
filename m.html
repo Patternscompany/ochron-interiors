@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catch the Ocron Logo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="customer" id="customer">
+      <img src="path-to-your-human-image.png" alt="Customer">
+    </div>
+    <div class="logo" id="ocron-logo">Ocron</div>
+    <div class="logo" id="logo1">Logo1</div>
+    <div class="logo" id="logo2">Logo2</div>
+    <div class="logo" id="logo3">Logo3</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+    /* styles.css */
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #87CEEB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.customer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+}
+
+.customer img {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  position: absolute;
+  top: -50px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+  0% { top: -50px; }
+  100% { top: 100vh; }
+}
+
+</style>
+
+
+<script>
+    // script.js
+document.addEventListener('DOMContentLoaded', () => {
+  const customer = document.getElementById('customer');
+  const ocronLogo = document.getElementById('ocron-logo');
+  const logos = document.querySelectorAll('.logo');
+  const gameContainer = document.querySelector('.game-container');
+
+  let gameWidth = gameContainer.offsetWidth;
+  let gameHeight = gameContainer.offsetHeight;
+  let isCaught = false;
+
+  // Function to move the customer
+  document.addEventListener('mousemove', (event) => {
+    let x = event.clientX - gameContainer.offsetLeft;
+    if (x > 0 && x < gameWidth - customer.offsetWidth) {
+      customer.style.left = x + 'px';
+    }
+  });
+
+  // Function to randomly position logos
+  function randomizeLogos() {
+    logos.forEach((logo) => {
+      let x = Math.random() * (gameWidth - logo.offsetWidth);
+      logo.style.left = x + 'px';
+    });
+  }
+
+  // Function to check collision
+  function checkCollision() {
+    logos.forEach((logo) => {
+      let logoRect = logo.getBoundingClientRect();
+      let customerRect = customer.getBoundingClientRect();
+
+      if (
+        logoRect.top < customerRect.bottom &&
+        logoRect.bottom > customerRect.top &&
+        logoRect.left < customerRect.right &&
+        logoRect.right > customerRect.left
+      ) {
+        if (logo === ocronLogo) {
+          logo.style.backgroundColor = 'green';
+          logo.textContent = 'Caught!';
+          isCaught = true;
+        } else {
+          logo.style.backgroundColor = 'gray';
+        }
+      }
+    });
+
+    if (!isCaught) {
+      requestAnimationFrame(checkCollision);
+    }
+  }
+
+  randomizeLogos();
+  checkCollision();
+});
+
+</script>
