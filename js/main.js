@@ -66,7 +66,72 @@
         items: 1,
         dotsData: true,
     });
-
+    // $(document).ready(function() {
+    //     const $carousel = $(".header-carousel");
+    //     const items = $carousel.find(".owl-carousel-item");
+    
+    //     items.each(function() {
+    //         const imgSrc = $(this).find("img").attr("src");
+    //         const slices = createSlices(imgSrc, 3); // Change 5 to the number of slices you want
+    //         $(this).append(slices);
+    //         $(this).append(`<img src="${imgSrc}" class="full-image" alt="">`);
+    //     });
+    
+    //     function createSlices(imgSrc, numSlices) {
+    //         const sliceContainer = $('<div class="sliced"></div>');
+    //         for (let i = 0; i < numSlices; i++) {
+    //             const slice = $('<div class="slice"></div>');
+    //             slice.css({
+    //                 'background-image': `url(${imgSrc})`,
+    //                 'background-position': `0 ${-i * 100 / numSlices}%`,
+    //                 'background-size': `100% ${100 * numSlices}%`
+    //             });
+    //             sliceContainer.append(slice);
+    //         }
+    //         return sliceContainer;
+    //     }
+    
+    //     $carousel.owlCarousel({
+    //         autoplay: true,
+    //         smartSpeed: 1500,
+    //         loop: true,
+    //         nav: false,
+    //         dots: true,
+    //         items: 1,
+    //         dotsData: true,
+    //         animateOut: 'fadeOut',
+    //         onTranslate: function(event) {
+    //             const currentItem = $(event.target).find(".owl-item").eq(event.item.index).find(".owl-carousel-item");
+    //             const slices = currentItem.find(".sliced .slice");
+    //             const fullImage = currentItem.find(".full-image");
+    
+    //             slices.each(function(index, element) {
+    //                 $(element).css({
+    //                     'animation-delay': `${index * 0.2}s`
+    //                 }).addClass('animated');
+    //             });
+    
+    //             fullImage.css({
+    //                 'animation-delay': `${1.5 + slices.length * 0.2}s` // Adjust delay to ensure full image shows after slices animation
+    //             }).addClass('animated');
+    //         },
+    //         onTranslated: function(event) {
+    //             const currentItem = $(event.target).find(".owl-item").eq(event.item.index).find(".owl-carousel-item");
+    //             const slices = currentItem.find(".sliced .slice");
+    //             const fullImage = currentItem.find(".full-image");
+    
+    //             // Remove animations for the next cycle
+    //             slices.each(function(index, element) {
+    //                 $(element).removeClass('animated');
+    //             });
+    
+    //             fullImage.removeClass('animated');
+    //         }
+    //     });
+    // });
+    
+    
+    
 
     // Testimonials carousel
     $('.testimonial-carousel').owlCarousel({
