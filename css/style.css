@@ -713,6 +713,9 @@ h6,
     background-color: #000;
   clip-path:polygon();
 }
+.footer .row:first-child{
+    margin-right: 0 !important;
+}
 .footer .btn.btn-link {
     display: block;
     margin-bottom: 5px;

@@ -253,7 +253,7 @@
                         and requirements. Through meticulous attention to detail and innovative design techniques, we
                         breathe life into spaces, ensuring they are not only aesthetically stunning but also functional
                         and practical.</p>
-                    <div class="d-flex align-items-center mb-5">
+                    <div class="d-flex align-items-center giff mb-5">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center border border-5 border-primary"
                             style="width: 120px; height: 120px;">
                             <h1 class="display-1 mb-n2" data-toggle="counter-up">10</h1>
@@ -299,7 +299,7 @@
         .wave figcaption {
           text-align: center;
         }
-        
+      
         .wave:after{
           content: '';
           position: absolute;
@@ -331,12 +331,28 @@
           0% { transform: rotate(10deg); }
           100% { transform: rotate(-10deg); }
         }
-          </style>
-    <style>
         .modi{
             height:400px;
             width:400px;
         }
+        @media(max-width:992px){
+            .giff{
+flex-wrap: wrap;
+}
+.modi{
+            height:100%;
+            width:100%;
+        }
+        .wave img {
+         
+          width: 100%;
+          height: 250px;
+        }
+        }
+       
+          </style>
+    <style>
+        
     </style>
 
 
@@ -955,7 +971,7 @@
     <!-- Footer Start -->
     <div class="container-fluid  text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
-            <div class="row g-5">
+            <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">Address</h3>
                     <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Second Floor, AJ Nidhi
